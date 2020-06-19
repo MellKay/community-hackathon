@@ -5,7 +5,7 @@
   border-radius: 5px;
   width: 90%;
   height: auto;
-  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .post > p,
@@ -13,13 +13,14 @@ h3 {
   margin-left: 10px;
 }
 
-.post > h3 {
-  margin-block-end: 2px;
+.post > .name {
+  display: inline;
 }
 
 .post > small {
   font-size: smaller;
   margin-left: 20px;
+  display: inline;
 }
 
 .post > img {

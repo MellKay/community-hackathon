@@ -26,3 +26,13 @@ body {
   text-decoration: none;
   color: black;
 }
+
+.logo {
+  width: 100px;
+}
+
+.title {
+  position: relative;
+  top: -70px;
+  left: 120px;
+}

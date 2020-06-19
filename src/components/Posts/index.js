@@ -21,12 +21,13 @@ function Posts() {
         return (
           <Link to={`/${item.id}`} className="links">
             <div className="post">
-              <h3>{item.title}</h3>
+              <h3 className="name">{item.name}</h3>
               <img
                 src="https://image.flaticon.com/icons/svg/67/67347.svg"
                 alt="location icon"
               />
               <small>{item.location}</small>
+              <h3>{item.title}</h3>
             </div>
           </Link>
         );

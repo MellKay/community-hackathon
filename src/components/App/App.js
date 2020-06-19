@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import logo from "./community-grey.svg";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "../Home";
@@ -11,7 +12,8 @@ function App() {
     <Router>
       <>
         <Link to="/" className="links">
-          <h1> Name/Logo Goes Here </h1>
+          <img src={logo} alt="logo" className="logo" />
+          <h2 className="title">Community Forum!!!</h2>
         </Link>
         <Switch>
           <Route path="/newPost">
