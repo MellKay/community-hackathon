@@ -1,0 +1,28 @@
+.post {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  background-color: #11acc0;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.post > p,
+h3 {
+  margin-left: 10px;
+}
+
+.post > h3 {
+  margin-block-end: 2px;
+}
+
+.post > small {
+  font-size: smaller;
+  margin-left: 20px;
+}
+
+.post > img {
+  width: 20px;
+  position: relative;
+  top: 5px;
+  left: 15px;
+}

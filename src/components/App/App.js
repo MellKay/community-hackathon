@@ -1,12 +1,27 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "../Home";
+import NewPost from "../NewPost";
 
 function App() {
   return (
-    <div className="App">
-      <h2> Hello gang </h2>
-    </div>
+    <Router>
+      <>
+        <Link to="/" className="links">
+          <h1> Name/Logo Goes Here </h1>
+        </Link>
+        <Switch>
+          <Route path="/newPost">
+            <NewPost />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </>
+    </Router>
   );
 }
 

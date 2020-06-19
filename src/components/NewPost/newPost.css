@@ -1,0 +1,13 @@
+input,
+textarea {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin: 10px;
+  border: none;
+  font-size: large;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+}
