@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./posts.css";
-
-const dummyData = [
-  { title: "Hello World", content: "Wagwan Chaps", location: "Birmingham" },
-  { title: "Beans", content: "On Toast", location: "Birmingham" },
-  { title: "ThunderStruck", content: "Best Team", location: "Birmingham" },
-];
+import { Link } from "react-router-dom";
 
 function Posts() {
   const [posts, setPosts] = useState([]);
@@ -24,12 +19,16 @@ function Posts() {
     <div>
       {posts.map((item) => {
         return (
-          <div className="post">
-            <h3>{item.title}</h3>
-            <img src="https://image.flaticon.com/icons/svg/67/67347.svg" />
-            <small>{item.location}</small>
-            <p>{item.content}</p>
-          </div>
+          <Link to={`/${item.id}`} className="links">
+            <div className="post">
+              <h3>{item.title}</h3>
+              <img
+                src="https://image.flaticon.com/icons/svg/67/67347.svg"
+                alt="location icon"
+              />
+              <small>{item.location}</small>
+            </div>
+          </Link>
         );
       })}
     </div>

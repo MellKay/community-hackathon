@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "../Home";
 import NewPost from "../NewPost";
+import IndividualPost from "../IndividualPost";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Switch>
           <Route path="/newPost">
             <NewPost />
+          </Route>
+          <Route path="/:id">
+            <IndividualPost />
           </Route>
           <Route path="/">
             <Home />

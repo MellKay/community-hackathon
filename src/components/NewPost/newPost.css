@@ -3,8 +3,15 @@ textarea {
   font-family: "Raleway", sans-serif;
   display: block;
   margin: 10px;
-  border: none;
+  border: 1px solid white;
+  border-radius: 5px;
   font-size: large;
+  background-color: #11acc0;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.6;
 }
 
 textarea {
