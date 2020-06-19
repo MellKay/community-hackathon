@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hackathon 19-6-2020
+
+For this hackathon the task was to create an app to improve health and wellbeing during the COVID-19 pandemic.
+
+/This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
