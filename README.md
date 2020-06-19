@@ -1,6 +1,14 @@
 ## Hackathon 19-6-2020
 
-For this hackathon the task was to create an app to improve health and wellbeing during the COVID-19 pandemic.
+For this hackathon the task was to create an app to improve health and wellbeing during the COVID-19 pandemic. We create a community message forum in a similar vein to freecycle where users can post things they need or have to offer, e.g. Masks, help with shopping, a chat.
+
+The user can select whether they are offering or need something and then provide their details and a message, post this to the forum and the details are stored on a postgres database.
+
+Created by
+
+Mell Russon  
+Patrick Young  
+Alexa Berry
 
 /This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
