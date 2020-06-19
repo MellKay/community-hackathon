@@ -44,7 +44,7 @@ function NewPost() {
   return (
     <>
       <div className="App">
-        <h2>New Post</h2>
+        <h2 style={{ marginTop: "-50px" }}>New Post</h2>
         <div className="inputWrapper">
           <input
             placeholder="Name"
