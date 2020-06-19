@@ -6,6 +6,7 @@
   width: 90%;
   height: auto;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .post > p,
@@ -28,4 +29,9 @@ h3 {
   position: relative;
   top: 5px;
   left: 12px;
+}
+
+.posted {
+  position: relative;
+  right: 10px;
 }

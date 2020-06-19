@@ -7,6 +7,7 @@ function NewPost() {
     location: "",
     title: "",
     content: "",
+    type: "",
   };
   const [formState, setFormState] = useState(initialState);
 
@@ -34,6 +35,12 @@ function NewPost() {
     console.log(formState);
   }
 
+  function handleOptionChange(e) {
+    e.persist();
+
+    setFormState({ ...formState, type: e.target.value });
+  }
+
   return (
     <>
       <div className="App">
@@ -57,6 +64,10 @@ function NewPost() {
             name="title"
             value={formState.title}
           />
+          <select onChange={handleOptionChange}>
+            <option value="Offer">Offer</option>
+            <option value="Request">Request</option>
+          </select>
           <textarea
             placeholder="Post Content"
             onChange={handleChange}
@@ -64,7 +75,9 @@ function NewPost() {
             value={formState.content}
           />
 
-          <button onClick={handleClick}>Post</button>
+          <button className="postButton" onClick={handleClick}>
+            Post
+          </button>
         </div>
       </div>
     </>

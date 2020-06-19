@@ -18,3 +18,19 @@ textarea {
   width: 90%;
   height: 150px;
 }
+
+select,
+.postButton {
+  border: 1px solid white;
+  background-color: #11acc0;
+  border-radius: 5px;
+}
+select {
+  position: relative;
+  left: 10px;
+}
+
+.postButton {
+  float: right;
+  margin-right: 16px;
+}

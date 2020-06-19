@@ -28,6 +28,16 @@ function Posts() {
               />
               <small>{item.location}</small>
               <h3>{item.title}</h3>
+              <small className="posted">
+                Posted at &nbsp;
+                {item.created_at
+                  .substring(11, 20)
+                  .split("-")
+                  .reverse()
+                  .join("-")}
+                &nbsp;
+                {item.created_at.substring(0, 10).split("-").join("-")}
+              </small>
             </div>
           </Link>
         );
