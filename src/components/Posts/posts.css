@@ -35,3 +35,20 @@ h3 {
   position: relative;
   right: 10px;
 }
+
+.comment {
+  width: 80vw;
+  position: relative;
+  left: -10px;
+  display: inline;
+}
+
+.reply {
+  border: 1px solid white;
+  background-color: #11acc0;
+  border-radius: 5px;
+  padding: 4px;
+  position: relative;
+  top: -2px;
+  width: 50px;
+}

@@ -31,6 +31,8 @@ function IndividualPost() {
         <small>{postData.location}</small>
         <p> {postData.content}</p>
       </div>
+      <input className="comment" placeholder="comment" />
+      <button className="reply">Reply</button>
     </div>
   );
 }
